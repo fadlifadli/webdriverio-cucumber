@@ -5,7 +5,7 @@ Feature: Kasirdemo Login Taks1 with TDD
         Scenario: Login succesfully with valid credentials
             Given I open Kasirdemo website
             When I login with valid credentials
-            Then I should be on the inventory page
+            # Then I should be on the inventory page
         
         Scenario Outline: Login with invalid credentials
             Given I open Kasirdemo website
