@@ -1,7 +1,7 @@
 const { Given, When, Then } = require("@wdio/cucumber-framework");
-const Page = require("../pages/page");
-const DashboardPage = require("../pages/dashboard.page");
-const LoginPage = require("../pages/login.page");
+const Page = require("../Ppages/page");
+const LoginPage = require("../Ppages/login.page");
+const DashboardPage = require("../Ppages/dashboard.page");
 
 Given(/^I open kasirdemo website$/, async () => {
     await Page.open('/');

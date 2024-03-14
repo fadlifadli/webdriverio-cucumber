@@ -22,7 +22,7 @@ exports.config = {
     //
     specs: [
         './task1/features/login.feature'
-        // './task-1/features/**/*.feature'
+        // './task1/features/**/*.feature'
         // './test/features/login.feature'
         // './test/features/**/*.feature'
         // ToDo: define location for spec files here
@@ -88,8 +88,8 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    // baseUrl: 'https://www.saucedemo.com/',
-    baseUrl: 'https://kasirdemo.belajarqa.com/login/',
+    baseUrl: 'https://www.saucedemo.com/',
+    // baseUrl: 'https://kasirdemo.belajarqa.com/login/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
