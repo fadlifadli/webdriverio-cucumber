@@ -3,16 +3,19 @@ const Page = require("../Ppages/page");
 const LoginPage = require("../Ppages/login.page");
 const DashboardPage = require("../Ppages/dashboard.page");
 
-Given(/^I open kasirdemo website$/, async () => {
+Given(/^I open KasirDemo website$/, async () => {
     await Page.open('/');
 })
 
 When(/^I login with valid credentials$/, async () => {
     await LoginPage.login('Tonihawk233@gmail.com','Aku1234');
+    await LoginPage.logout();
 })
 
-Then(/^I should be on the inventory page$/, async () => {
+Then(/^I should be on the dashboard page$/, async () => {
+    await LoginPage.login('Tonihawk233@gmail.com','Aku1234');
     await DashboardPage.assertDashboardUrl();
+    await LoginPage.logout();
 })
 
 When(/^I login with invalid email$/, async () => {

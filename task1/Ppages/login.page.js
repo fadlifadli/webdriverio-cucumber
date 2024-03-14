@@ -13,6 +13,13 @@ class LoginPage{
     get errorMsg(){
         return $('//*[@role="alert"]'); // locator ErrorMessage
     }
+
+    get buttonProfile(){
+        return $('#menu-button-14'); // locator buttonProfile
+    }
+    get profileLogout(){
+        return $('#menu-list-14-menuitem-12'); // locator buttonProfileLogout
+    }
     // definisikan action/interaksi yang dilakukan pada element tersebut
     async login(email,password) {
         await this.emailInput.setValue(email);
@@ -20,6 +27,10 @@ class LoginPage{
         await this.loginButton.click();
     }
     
+    async logout(){
+        await this.buttonProfile.click();
+        await this.profileLogout.click();
+    }
     async assertErrorMessage(expectedErrorMessage){
         await expect(this.errorMsg).toHaveTextContaining(expectedErrorMessage);
     }
