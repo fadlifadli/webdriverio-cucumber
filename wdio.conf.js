@@ -21,7 +21,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './task-1/features/login.feature'
+        './task1/features/login.feature'
         // './task-1/features/**/*.feature'
         // './test/features/login.feature'
         // './test/features/**/*.feature'
@@ -89,7 +89,7 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     // baseUrl: 'https://www.saucedemo.com/',
-    baseUrl: 'https://kasirdemo.belajarqa.com/login',
+    baseUrl: 'https://kasirdemo.belajarqa.com/login/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -134,7 +134,7 @@ exports.config = {
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: 
-        ['./task-1/stepDef/*.js'],
+        ['./task1/stepDef/*.js'],
         // ['./test/stepDef/*.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,

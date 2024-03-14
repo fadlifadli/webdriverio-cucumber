@@ -1,5 +1,5 @@
 @regression
-Feature: Kasirdemo Login Tests with TDD
+Feature: Kasirdemo Login Taks1 with TDD
 
     @all @positive @smoke
         Scenario: Login succesfully with valid credentials

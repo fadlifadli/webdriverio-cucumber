@@ -4,7 +4,6 @@ const InventoryPage = require("../pages/inventory.page");
 const LoginPage = require("../pages/login.page");
 
 Given(/^I open Saucedemo website$/, async () => {
-    // await browser.url('/');
     await Page.open('/');
 })
 

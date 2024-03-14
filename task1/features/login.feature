@@ -1,5 +1,5 @@
 @regression @tdd
-Feature: KasirDemo Login Tests
+Feature: KasirDemo Login Taks1
 
     @all @positive @smoke
     Scenario: Login succesfully with valid credentials

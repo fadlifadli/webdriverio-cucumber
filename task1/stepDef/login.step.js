@@ -4,7 +4,6 @@ const DashboardPage = require("../pages/dashboard.page");
 const LoginPage = require("../pages/login.page");
 
 Given(/^I open kasirdemo website$/, async () => {
-    // await browser.url('/');
     await Page.open('/');
 })
 
