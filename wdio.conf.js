@@ -21,7 +21,9 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/features/login.feature'
+        './task-1/features/login.feature'
+        // './task-1/features/**/*.feature'
+        // './test/features/login.feature'
         // './test/features/**/*.feature'
         // ToDo: define location for spec files here
     ],
@@ -131,7 +133,9 @@ exports.config = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./test/stepDef/*.js'],
+        require: 
+        ['./task-1/stepDef/*.js'],
+        // ['./test/stepDef/*.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)

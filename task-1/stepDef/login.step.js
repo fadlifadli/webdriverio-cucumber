@@ -1,6 +1,6 @@
-const { Given } = require("@wdio/cucumber-framework");
+const { Given, When, Then } = require("@wdio/cucumber-framework");
 const Page = require("../pages/page");
-const InventoryPage = require("../pages/inventory.page");
+const DashboardPage = require("../pages/dashboard.page");
 const LoginPage = require("../pages/login.page");
 
 Given(/^I open kasirdemo website$/, async () => {
@@ -13,7 +13,7 @@ When(/^I login with valid credentials$/, async () => {
 })
 
 Then(/^I should be on the inventory page$/, async () => {
-    await InventoryPage.assertInventoryUrl();
+    await DashboardPage.assertDashboardUrl();
 })
 
 When(/^I login with invalid email$/, async () => {
